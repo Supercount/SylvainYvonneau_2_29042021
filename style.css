@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+}
+
+body
+{
+    width: 80%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+    position: relative;
+}
+
+header img
+{
+    padding-top: 20px;
+    text-align: bottom;
+}
+
+header #menu
+{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+    height: 30px;
+}
+
+header a
+{
+    margin-right: 25px;
+    text-decoration: none;
+    color: #121212;
+}
+
+header a:hover
+{
+    text-decoration: overline #0065fc;
+    color: #0065fc;
+    padding-top: 12px;
+}
+
+#inscription
+{
+    color: #0065fc;
+    font-weight: bold;
+}
+
+#recherche
+{
+    clear: both;
+}
+
+.blue_star
+{
+    color: #0065fc;
+}
+
+.grey_star
+{
+    color: #f2f2f2;
+}
