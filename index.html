@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/1dae407537.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 
-<body>
+<body>    
+    <!-- Mise en place de l'entête-->
     <header>
         <img src="images/logo/Reservia.svg" alt="logo_reservia" id="logo">
         <ul id="menu">
@@ -16,6 +17,8 @@
             <li><a href="#" id="inscription">S'inscrire</a></li>
         </ul>
     </header>
+        
+    <!-- Section pour la recherche de ville et les filtres-->
     <div id="recherche">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -27,13 +30,15 @@
         <p id="filtres">Filtres <i class="fas fa-money-bill-wave">Économique</i> <i class="fas fa-child">Familial</i> <i class="fas fa-heart">Romantique</i> <i class="fas fa-dog">Animaux Autorisés</i></p>
         <p> <i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
-    <div id="populaire">
+    
+    <!-- Section pour les location populaires-->
+    <section id="populaire">
         <h1>Les plus populaires</h1>
         <i class="fas fa-chart-line"></i>
         <div id="soleil_matin">
             <h2>Hôtel Le soleil du matin</h2>
             <p>Nuit à partir de 128€</p>
-            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p class="stars"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i></p>
         </div>
         <div id="coeur_eau">
             <h2>Au coeur de l'eau Chambre d'hôtes</h2>
@@ -43,40 +48,44 @@
         <div id="bleu_blanc">
             <h2>Hôtel Tout bleu et Blanc</h2>
             <p>Nuit à partir de 68€</p>
-            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p class="stars"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></p>
         </div>
-        
-    </div>
-    <div id="hebergements_marseille">
+    </section>
+    
+    <!-- Section pour les logements sur Marseille-->
+    <section id="hebergements_marseille">
         <h1>Hébergements à Marseille</h1>
         <div id="cannebiere">
             <h2>Auberge la Cannebière</h2>
             <p>Nuit à partir de 25€</p>
-            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p class="stars"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></p>
         </div><div id="hotel_port">
             <h2>Hôtel du port</h2>
             <p>Nuit à partir de 52€</p>
-            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p class="stars"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i></p>
         </div><div id="mouettes">
             <h2>Hôtel Les mouettes</h2>
             <p>Nuit à partir de 76€</p>
-            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p class="stars"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></p>
         </div><div id="hotel_mer">
             <h2>Hôtel de la mer</h2>
             <p>Nuit à partir de 46€</p>
-            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p class="stars"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i><i class="fas fa-star grey_star"></i></p>
         </div><div id="panier">
             <h2>Auberge Le Panier</h2>
             <p>Nuit à partir de 23€</p>
-            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p class="stars"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></p>
         </div><div id="amina">
             <h2>Hôtel chez Amina</h2>
             <p>Nuit à partir de 96€</p>
-            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p class="stars"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i></p>
         </div>
         <p><a href="#">Afficher plus</a></p>
-    </div>
-    <div id="activites">
+    </section>
+    
+    <!-- Activités disponibles à Marseille-->
+    <section id="activites">
+        <h2>Activités à Marseille</h2>
         <div id="vieux_port">
             Vieux Port
         </div>
@@ -99,11 +108,13 @@
                 Parc Longchamp
             </div>
         </div>
-    </div>
+    </section>
     
+    <!-- Mise en place du pied de page-->
     <footer>
         <div id="a_propos">
             <ul>
+                <li>A propos</li>
                 <li><a href="#">Fonctionnement du site</a></li>
                 <li><a href="#">Conditions générales de vente</a></li>
                 <li><a href="#">Données et confidentialité</a></li>
@@ -111,12 +122,14 @@
         </div>
         <div id="nos_hebergements">
             <ul>
+                <li>Nos hébergements</li>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
         <div id="assistance">
             <ul>
+                <li>Assistance</li>
                 <li><a href="#">Centre d'aide</a></li>
                 <li><a href="#">Nous contacter</a></li>
             </ul>
