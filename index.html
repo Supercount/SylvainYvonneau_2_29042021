@@ -17,18 +17,24 @@
             <li><a href="#" id="inscription">S'inscrire</a></li>
         </ul>
     </header>
-        
+    
     <!-- Section pour la recherche de ville et les filtres-->
     <div id="recherche">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <form action="recherche.php" method="post">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="search" value="Marseille, France">
-            <input type="submit" value="Rechercher">
+            <i class="fas fa-map-marker-alt" id="logo_lieu"></i>
+            <input type="search" value="  Marseille, France" id="champ">
+            <div><a href="#" id="bouton">Rechercher</a></div>
         </form>
-        <p id="filtres">Filtres <i class="fas fa-money-bill-wave">Économique</i> <i class="fas fa-child">Familial</i> <i class="fas fa-heart">Romantique</i> <i class="fas fa-dog">Animaux Autorisés</i></p>
-        <p> <i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+        <ul id="filtres">
+            <li>Filtres</li>
+            <li id="eco" class="actual_filtre"><i class="fas fa-money-bill-wave"></i><span id="eco_texte">Économique</span></li>
+            <li id="famille" class="actual_filtre"><i class="fas fa-child"></i><span id="famille_texte">Familial</span></li>
+            <li id="romance" class="actual_filtre"><i class="fas fa-heart"></i><span id="romance_texte">Romantique</span></li>
+            <li id="animaux" class="actual_filtre"><i class="fas fa-dog"></i><span id="animaux_texte">Animaux Autorisés</span></li>
+        </ul>
+        <p> <i class="fas fa-info" id=info_logo></i> Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
     
     <!-- Section pour les location populaires-->
