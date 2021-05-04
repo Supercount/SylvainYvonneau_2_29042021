@@ -14,7 +14,7 @@ body
 header
 {
     position: relative;
-    height: 60px;
+    height: 80px;
 }
 
 header img
@@ -26,14 +26,12 @@ header img
 
 header #menu
 {
-    /*position: absolute;
-    right: 10px;
-    top: 10px;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: flex-end;
     list-style-type: none;
+    padding-top: 40px;
     text-align: center;
     font-size: 16px;
 }
@@ -48,7 +46,7 @@ header a
 header a:hover
 {
     border-top: #0065fc solid 2px;
-    padding-top: 10px;
+    padding-top: 50px;
     color: #0065fc;
 }
 
@@ -236,20 +234,91 @@ form div
     color: #0065fc;
 }
 
+
+#main_display
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#populaire
+{
+    background: #f2f2f2;
+    border-radius: 20px;
+    max-height: 650px;
+    flex: 1.1;
+    justify-content: space-around;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#populaire h1
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#populaire .fa-chart-line
+{
+    position: absolute;
+    font-size: 1.3em;
+    right: 30px;
+    top: 25px;
+}
+
+.showcase
+{
+    border: white solid 3px;
+    background: white;
+    border-radius: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.showcase img
+{
+    width: 130px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    margin-left: 2px;
+    margin-top: 1px;
+}
+
+.showcase .nom_prix_rating
+{
+    margin-left: 10px;
+}
+
+.showcase .nom_prix_rating h2
+{
+    font-size: 1.3em;
+}
+
+#hebergements_marseille
+{
+    background: #f2f2f2;
+    border-radius: 20px;
+    margin-right: 20px;
+    flex: 3;
+    display: flex;
+}
+
 .blue_star
 {
     color: #0065fc;
+    margin-left: 2px;
 }
 
 .grey_star
 {
     color: #f2f2f2;
+    margin-left: 2px;
 }
 
-section
-{
-    display: flex;
-}
 
 footer
 {
