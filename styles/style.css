@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Raleway';
     src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
-         url('fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+         url('fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
 body
@@ -11,16 +11,23 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
+a
+{
+    text-decoration: none;
+    color: #121212;
+}
+
 header
 {
     position: relative;
     height: 80px;
+    margin: auto;
 }
 
 header img
 {
     padding-top: 20px;
-    text-align: bottom;
+    text-align: end;
     float: left;
 }
 
@@ -39,8 +46,6 @@ header #menu
 header a
 {
     margin-right: 25px;
-    text-decoration: none;
-    color: #121212;
 }
 
 header a:hover
@@ -86,14 +91,14 @@ form
 #logo_lieu
 {
     position: relative;
-    top: -2px;
+    top: -1px;
     left: -1px;
     height: 29px;
     width: 40px;
-    border-radius: 20px 0 0 20px;
-    border: #f2f2f2 solid 2px;
+    border-radius: 15px 0 0 15px;
+    border: none;
     background: #f2f2f2;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-left: 20px;
 }
 
@@ -112,7 +117,7 @@ form
     color: white;
     font-family: 'Raleway';
     font-size: 1.3em;
-    border: #0065fc solid 2px;
+    border: none;
     border-radius: 0 15px 15px 0;
     justify-content: center;
     align-content: center;
@@ -132,13 +137,13 @@ form
 #filtres .fas
 {
     background: #f2f2f2 ;
-    border: solid 2px #f2f2f2;
+    border: none;
     border-radius: 20px 20px;
     height: 17px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     color: #0065fc;
     justify-content: left;
 }
@@ -243,7 +248,7 @@ form
     flex-direction: column;
 }
 
-#populaire h1
+#populaire h2
 {
     font-size: 1.3em;
     font-weight: bold;
@@ -254,27 +259,28 @@ form
     position: absolute;
     font-size: 1.3em;
     right: 30px;
-    top: 25px;
+    top: 30px;
 }
 
 .showcase
 {
-    border: white solid 3px;
+    border: none;
     background: white;
     border-radius: 20px;
     margin-right: 20px;
+    height: 160px;
     display: flex;
 }
 
 .showcase img
 {
-    width: 130px;
-    height: 150px;
-    max-width: 100%;
-    object-fit: cover;
+    width: 150px;
+    max-height: 100%;
+    max-width: 60%;
     border-radius: 15px 0 0 15px;
     margin-left: 2px;
     margin-top: 1px;
+    object-fit: cover;
 }
 
 .showcase .nom_prix_rating
@@ -282,7 +288,7 @@ form
     margin-left: 10px;
 }
 
-.showcase .nom_prix_rating h2
+.showcase .nom_prix_rating h3
 {
     font-size: 1.3em;
 }
@@ -295,7 +301,7 @@ form
     flex: 3;
 }
 
-article h1
+article h2
 {
     font-size: 1.3em;
     margin-left: 50px;
@@ -309,12 +315,13 @@ article h1
 
 .showcase2
 {
-    border: white solid 3px;
+    border: none;
     background: white;
     border-radius: 20px;
     margin-top: 20px;
     margin-left: 50px;
     max-height: 260px;
+    width: 260px;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -323,13 +330,12 @@ article h1
 
 .showcase2 img
 {
-    width: 260px;
     height: 150px;
     max-width: 100%;
-    object-fit: cover;
     border-radius: 15px 15px 0 0 ;
     margin-left: 2px;
-    margin-top: 1px;
+    margin-top: 15px;
+    object-fit: cover;
 }
 
 .showcase2 .nom_prix_rating
@@ -355,8 +361,6 @@ article h1
 
 article p a
 {
-    text-decoration: none;
-    color: black;
     font-weight: bold;
     font-size: 1em;
     margin-left: 50px;
@@ -374,9 +378,162 @@ article p a
     margin-left: 2px;
 }
 
+#activites
+{
+    width: 100%;
+}
+
+#liste_activites
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#liste_activites img
+{
+    border-radius: 15px 15px 0 0;
+}
+
+#liste_activites p
+{
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+#groupe1, #groupe2
+{
+    max-width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#vieux_port
+{
+    max-width: 50%;
+    border: #f2f2f2 2px solid;
+    border-radius: 20px;
+}
+
+#vieux_port img
+{
+    height: 90%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+}
+
+#sousgroupe1
+{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pomegues
+{
+    width: 100%;
+    flex: 2;
+    border: #f2f2f2 2px solid;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#pomegues img
+{
+    position: relative;
+    top: -150px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+    padding-bottom: 0;
+}
+
+#frioul
+{
+    width: 100%;
+    flex: 1;
+    border: #f2f2f2 2px solid;
+    border-radius: 20px;
+}
+
+#frioul img
+{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+    margin: 0;
+}
+
+#calanques
+{
+    max-height: 75%;
+    max-width: 50%;
+    border: #f2f2f2 2px solid;
+    border-radius: 20px;
+}
+
+/*
+max-width: 50%;
+border: #f2f2f2 2px solid;
+border-radius: 20px;
+*/
+#calanques img
+{
+    height: 90%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+}
+
+#sousgroupe2
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+#dame_garde
+{
+    max-width: 90%;
+    border: #f2f2f2 2px solid;
+    border-radius: 20px;
+}
+
+#dame_garde img
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+    margin: 0;
+}
+
+#longchamp
+{
+    max-width: 90%;
+    border: #f2f2f2 2px solid;
+    border-radius: 20px;
+}
+
+#longchamp img
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.showcase:hover, .showcase2:hover, .showcase3:hover
+{
+    cursor: pointer;
+    box-shadow: #121212 5px 5px 10px;
+}
 
 footer
 {
+    margin-top: 30px;
     display: flex;
     background: #f2f2f2;
     flex-direction: row;
@@ -403,11 +560,6 @@ footer div li:nth-child(3), footer div li:nth-child(4)
     margin-top: 8px;
 }
 
-footer a
-{
-    text-decoration: none;
-    color: #121212;
-}
 
 footer ul
 {
