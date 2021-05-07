@@ -21,6 +21,7 @@ header
 {
     position: relative;
     height: 80px;
+    width: 95%;
     margin: auto;
 }
 
@@ -64,6 +65,8 @@ header a:hover
 #recherche
 {
     clear: both;
+    width: 95%;
+    margin: auto;
 }
 
 #recherche h1
@@ -233,6 +236,8 @@ form
 {
     display: flex;
     flex-direction: row-reverse;
+    width: 95%;
+    margin: auto;
 }
 
 #populaire
@@ -268,6 +273,7 @@ form
     background: white;
     border-radius: 20px;
     margin-right: 20px;
+    margin-bottom: 10px;
     height: 160px;
     display: flex;
 }
@@ -278,8 +284,6 @@ form
     max-height: 100%;
     max-width: 60%;
     border-radius: 15px 0 0 15px;
-    margin-left: 2px;
-    margin-top: 1px;
     object-fit: cover;
 }
 
@@ -318,7 +322,7 @@ article h2
     border: none;
     background: white;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 50px;
     max-height: 260px;
     width: 260px;
@@ -333,8 +337,6 @@ article h2
     height: 150px;
     max-width: 100%;
     border-radius: 15px 15px 0 0 ;
-    margin-left: 2px;
-    margin-top: 15px;
     object-fit: cover;
 }
 
@@ -380,7 +382,8 @@ article p a
 
 #activites
 {
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 #liste_activites
@@ -388,7 +391,7 @@ article p a
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: bold;
 }
 
@@ -397,10 +400,20 @@ article p a
     border-radius: 15px 15px 0 0;
 }
 
-#liste_activites p
+.showcase3
 {
+    border: #f2f2f2 2px solid;
+    border-radius: 15px 15px 20px 20px;
+}
+
+.showcase3 .nom_activite
+{
+    position: relative;
+    bottom: 5px;
+    align-items: center;
     font-weight: bold;
     padding-left: 20px;
+    font-size: 1.1em;
 }
 
 #groupe1, #groupe2
@@ -414,77 +427,68 @@ article p a
 #vieux_port
 {
     max-width: 50%;
-    border: #f2f2f2 2px solid;
-    border-radius: 20px;
+}
+
+.showcase3 img
+{
+    height: 150px;
+    max-width: 100%;
+    border-radius: 15px 15px 0 0 ;
+    object-fit: cover;
 }
 
 #vieux_port img
 {
     height: 90%;
-    max-width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0 ;
 }
 
 #sousgroupe1
 {
-    padding-left: 30px;
     display: flex;
     flex-direction: column;
+    width: 45%;
+    justify-content: space-evenly;
 }
 
 #pomegues
 {
     width: 100%;
-    flex: 2;
-    border: #f2f2f2 2px solid;
-    border-radius: 20px;
+    max-height: 60%;
     overflow: hidden;
 }
 
 #pomegues img
 {
-    position: relative;
-    top: -150px;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0 ;
-    padding-bottom: 0;
 }
 
 #frioul
 {
+    margin-top: 20px;
+    max-height: 50%;
     width: 100%;
-    flex: 1;
-    border: #f2f2f2 2px solid;
-    border-radius: 20px;
+    overflow: hidden;
 }
 
 #frioul img
 {
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0 ;
-    margin: 0;
 }
 
 #calanques
 {
-    max-height: 75%;
     max-width: 50%;
-    border: #f2f2f2 2px solid;
-    border-radius: 20px;
 }
 
-/*
-max-width: 50%;
-border: #f2f2f2 2px solid;
-border-radius: 20px;
-*/
 #calanques img
 {
     height: 90%;
-    max-width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0 ;
 }
@@ -493,15 +497,9 @@ border-radius: 20px;
 {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    width: 45%;
 }
 
-#dame_garde
-{
-    max-width: 90%;
-    border: #f2f2f2 2px solid;
-    border-radius: 20px;
-}
 
 #dame_garde img
 {
@@ -513,9 +511,7 @@ border-radius: 20px;
 
 #longchamp
 {
-    max-width: 90%;
-    border: #f2f2f2 2px solid;
-    border-radius: 20px;
+    margin-top: 20px;
 }
 
 #longchamp img
@@ -529,6 +525,7 @@ border-radius: 20px;
 {
     cursor: pointer;
     box-shadow: #121212 5px 5px 10px;
+    border: none;
 }
 
 footer
@@ -542,7 +539,7 @@ footer
 
 footer div
 {
-    width: 300px;
+    width: 450px;
 }
 
 footer div li:first-child
