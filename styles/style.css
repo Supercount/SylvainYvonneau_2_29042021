@@ -267,7 +267,7 @@ form
     top: 30px;
 }
 
-.showcase
+.showcase a
 {
     border: none;
     background: white;
@@ -317,7 +317,7 @@ article h2
     flex-wrap: wrap;
 }
 
-.showcase2
+.showcase2 a
 {
     border: none;
     background: white;
@@ -455,7 +455,7 @@ article p a
 #pomegues
 {
     width: 100%;
-    max-height: 60%;
+    max-height: 70%;
     overflow: hidden;
 }
 
