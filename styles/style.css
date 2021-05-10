@@ -32,31 +32,36 @@ header img
     float: left;
 }
 
-header #menu
+#menu
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: flex-end;
     list-style-type: none;
-    padding-top: 40px;
     text-align: center;
     font-size: 16px;
 }
 
-header a
+#menu div
 {
-    margin-right: 25px;
+    padding-top: 50px;
+    width: 150px;
 }
 
-header a:hover
+
+header div:hover
 {
     border-top: #0065fc solid 2px;
-    padding-top: 50px;
     color: #0065fc;
 }
 
-#inscription
+header div a:hover
+{
+    color: #0065fc;
+}
+
+#inscription a
 {
     color: #0065fc;
     font-weight: bold;
@@ -254,6 +259,7 @@ header a:hover
     min-height: 650px;
     flex: 1.1;
     justify-content: space-around;
+    min-width: 29%;
     margin-top: 20px;
     padding-left: 20px;
     position: relative;
@@ -571,3 +577,4 @@ footer ul
 {
     list-style-type: none;
 }
+
