@@ -45,10 +45,9 @@ header img
 
 #menu div
 {
-    padding-top: 50px;
+    padding-top: 37px;
     width: 150px;
 }
-
 
 header div:hover
 {
@@ -173,10 +172,6 @@ header div a:hover
     border: solid 2px #f2f2f2;
     border-radius: 20px 20px;
     justify-content: space-between;
-}
-
-#eco, #famille, #romance, #animaux
-{
     margin-left: 20px;
     cursor: pointer;
 }
@@ -225,10 +220,9 @@ header div a:hover
     padding-left: 10px;
 }
 
-#eco:hover, #famille:hover, #romance:hover, #animaux:hover
+.actual_filtre:hover
 {
     color: #0065fc;
-    cursor: pointer;
 }
 
 #info_logo
@@ -294,7 +288,7 @@ header div a:hover
 {
     width: 150px;
     max-height: 100%;
-    max-width: 60%;
+    max-width: 50%;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
@@ -530,7 +524,6 @@ article p a
     height: 210px;
     object-fit: cover;
     border-radius: 15px 15px 0 0 ;
-    margin: 0;
 }
 
 #longchamp
@@ -608,6 +601,11 @@ footer ul
 
 @media screen and (max-width: 1000px)
 {
+    body
+    {
+        width: 100%;
+    }
+
     #main_display
     {
         display: flex;
@@ -615,22 +613,92 @@ footer ul
         width: 100%;
         margin: auto;
     }
-    
-    #hebergements_marseille
+
+    #populaire
     {
-        background: none;
+        width: 100%;
+        padding-left: 10px;
+        border-radius: 0;
     }
+    
+#populaire .fa-chart-line
+{
+    position: absolute;
+    font-size: 1.3em;
+    right: 30px;
+    top: 20px;
+}
+    
 
     .showcase a
     {
         height: 130px;
     }
 
-    .showcase2 a
+    .showcase img
     {
-        max-width: 100%;
+        max-height: 100%;
+        max-width: 40%;
+        border-radius: 15px 0 0 15px;
+        object-fit: cover;
     }
 
+.showcase .nom_prix_rating
+{
+    margin-left: 15px;
+}
+
+.showcase .nom_prix_rating h3
+{
+    font-size: 1em;
+}
+
+.showcase .nom_prix_rating p
+{
+    font-size: 0.9em;
+}
+
+    #hebergements_marseille
+    {
+        background: none;
+        width: 100%;
+    }
+
+    #hotels
+    {
+        position: relative;
+        top: -75px;
+    }
+
+    article h2
+    {
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
+    .showcase2
+    {
+        margin-top: 50px;
+        padding-left: 13px;
+        width: 100%;
+        max-height: 180px;
+    }
+
+    .showcase2 a
+    {
+        box-shadow: #f2f2f2 5px 0 5px;
+    }
+
+    .showcase2 img
+    {
+        max-height: 90px;
+        top: 0;
+    }
+
+    .showcase2 .nom_prix_rating
+    {
+        font-size: 0.8em;
+    }
     #champ_recherche
     {
         height: 40px;
