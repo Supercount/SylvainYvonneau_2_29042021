@@ -19,10 +19,11 @@ a
 
 header
 {
-    position: relative;
     height: 80px;
     width: 95%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 header img
@@ -68,7 +69,6 @@ header div a:hover
 
 #recherche
 {
-    clear: both;
     width: 95%;
     margin: auto;
 }
@@ -93,6 +93,7 @@ header div a:hover
     align-content: center;
     border: solid 2px #f2f2f2;
     border-radius: 20px;
+    margin-left: 15px;
 }
 
 #logo_lieu
@@ -312,7 +313,7 @@ header div a:hover
     flex: 3;
 }
 
-article h2
+section h2
 {
     font-size: 1.3em;
     margin-left: 50px;
@@ -370,7 +371,7 @@ article h2
     color: #0065fc;
 }
 
-article p a
+section p a
 {
     font-weight: bold;
     font-size: 1em;
@@ -554,6 +555,7 @@ footer
     background: #f2f2f2;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 footer div
@@ -606,6 +608,59 @@ footer ul
         width: 100%;
     }
 
+    header
+    {
+        width: 100%;
+        position: relative;
+        right: 10px;
+    }
+    
+    header img
+    {
+        padding-left: 20px;
+    }
+    
+    #menu
+    {
+        min-width: 100%;
+        position: absolute;
+        right: 0;
+    }
+    
+    #menu div
+    {
+        height: 55px;
+        min-width: 50%;
+        padding-top: 17px;
+    }
+
+    #inscription
+    {
+        border-top: 2px solid white;
+    }
+    
+    #inscription:hover
+    {
+        border-top: solid 2px #0065fc;
+    }
+
+    #lien_activite, #lien_recherche
+    {
+        padding-top: 0;
+        border-bottom: solid 2px #f2f2f2;
+    }
+    
+    #lien_activite:hover, #lien_recherche:hover
+    {
+        border-top: none;
+        border-bottom: solid 2px #0065fc;
+    }
+    
+    #recherche
+    {
+        margin-top: 100px;
+    }
+    
     #main_display
     {
         display: flex;
@@ -613,28 +668,28 @@ footer ul
         width: 100%;
         margin: auto;
     }
-
+    
     #populaire
     {
         width: 100%;
+        max-width: 100%;
         padding-left: 10px;
         border-radius: 0;
     }
     
-#populaire .fa-chart-line
-{
-    position: absolute;
-    font-size: 1.3em;
-    right: 30px;
-    top: 20px;
-}
+    #populaire .fa-chart-line
+    {
+        position: absolute;
+        font-size: 1.3em;
+        right: 30px;
+        top: 20px;
+    }
     
-
     .showcase a
     {
         height: 130px;
     }
-
+    
     .showcase img
     {
         max-height: 100%;
@@ -642,63 +697,64 @@ footer ul
         border-radius: 15px 0 0 15px;
         object-fit: cover;
     }
-
-.showcase .nom_prix_rating
-{
-    margin-left: 15px;
-}
-
-.showcase .nom_prix_rating h3
-{
-    font-size: 1em;
-}
-
-.showcase .nom_prix_rating p
-{
-    font-size: 0.9em;
-}
-
+    
+    .showcase .nom_prix_rating
+    {
+        margin-left: 15px;
+    }
+    
+    .showcase .nom_prix_rating h3
+    {
+        font-size: 1em;
+    }
+    
+    .showcase .nom_prix_rating p
+    {
+        font-size: 0.9em;
+    }
+    
     #hebergements_marseille
     {
         background: none;
         width: 100%;
     }
-
+    
     #hotels
     {
         position: relative;
         top: -75px;
     }
-
+    
     article h2
     {
         font-size: 1.2em;
         margin-left: 10px;
     }
-
+    
     .showcase2
     {
-        margin-top: 50px;
+        margin-top: 60px;
         padding-left: 13px;
         width: 100%;
-        max-height: 180px;
+        max-height: 150px;
     }
-
+    
     .showcase2 a
     {
         box-shadow: #f2f2f2 5px 0 5px;
     }
-
+    
     .showcase2 img
     {
         max-height: 90px;
         top: 0;
     }
-
+    
     .showcase2 .nom_prix_rating
     {
         font-size: 0.8em;
     }
+    
     #champ_recherche
     {
         height: 40px;
@@ -709,21 +765,6 @@ footer ul
         border: solid 2px #f2f2f2;
         border-radius: 20px;
     }
-    /*
-    #logo_lieu
-    {
-        position: relative;
-        top: -1px;
-        left: -1px;
-        height: 30px;
-        width: 40px;
-        border-radius: 15px 0 0 15px;
-        border: none;
-        background: #f2f2f2;
-        padding-top: 12px;
-        padding-left: 15px;
-        padding-right: 10px;
-    }*/
     
     #champ
     {
@@ -748,6 +789,24 @@ footer ul
         justify-content: center;
         align-content: center;
     }
+    
+    #liste_activites
+    {
+        flex-direction: column;
+        font-weight: bold;
+    }
+    
+    #liste_activites img
+    {
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .showcase3
+    {
+        border: #f2f2f2 2px solid;
+        border-radius: 15px 15px 20px 20px;
+    }
+    
 }
 
 @media screen and (max-width: 700px)
@@ -757,7 +816,7 @@ footer ul
     {
         align-content: center;
     }
-
+    
     .showcase2 a
     {
         width: 600px;
