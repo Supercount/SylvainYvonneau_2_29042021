@@ -26,37 +26,42 @@ header
     justify-content: space-between;
 }
 
-header img
-{
-    padding-top: 20px;
-    text-align: end;
-    float: left;
-}
-
 #menu
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
     list-style-type: none;
     text-align: center;
+    align-items: baseline;
     font-size: 16px;
+    width: 100%;
 }
 
-#menu div
+#menu li
 {
-    padding-top: 37px;
+    display: inline-block;
+    padding-top: 30px;
     width: 150px;
+    align-items: baseline;
 }
 
-header div:hover
+#lien_logo
+{
+    position: relative;
+    top: 10px;
+    text-align: left;
+    flex: 1;
+}
+
+#lien_recherche:hover, #lien_activite:hover, #inscription:hover
 {
     border-top: #0065fc solid 2px;
     color: #0065fc;
 }
 
-header div a:hover
+header li a:hover
 {
     color: #0065fc;
 }
@@ -343,7 +348,7 @@ section h2
 .showcase2 img
 {
     position: relative;
-    top: 13px;
+    top: 12px;
     height: 150px;
     max-width: 100%;
     border-radius: 15px 15px 0 0 ;
