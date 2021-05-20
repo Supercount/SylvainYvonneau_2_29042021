@@ -587,12 +587,7 @@ footer ul
 }
 
 @media screen and (max-width: 1700px)
-{
-    .showcase a
-    {
-        height: 180px;
-    }
-    
+{    
     .showcase .nom_prix_rating
     {
         margin-left: 5px;
@@ -604,13 +599,55 @@ footer ul
     }
 }
 
-@media screen and (max-width: 1000px) and(min-width: 700px)
+@media screen and (max-width: 1000px) and (min-width: 700px)
 {
     body
     {
         width: 100%;
     }
+    
+    header
+    {
+        width: 100%;
+    }
+    
+    #menu li
+    {
+        max-width: 30%;
+    }
 
+    #main_display
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    
+    #populaire
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        border-radius: 0;
+    }
+    
+    #populaire h2
+    {
+        margin-left: 0px;
+        width: 90%;
+    }
+
+    .showcase
+    {
+        max-width: 33%;
+    }
+
+    #hebergements_marseille
+    {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 699.98px)
@@ -637,7 +674,7 @@ footer ul
         position: absolute;
         right: 0;
     }
-
+    
     #lien_logo
     {
         order: 1;
@@ -652,7 +689,7 @@ footer ul
         height: 40px;
         min-width: 50%;
     }
-
+    
     #inscription
     {
         order: 2;
@@ -665,7 +702,7 @@ footer ul
         border-top: solid 2px #0065fc;
         padding-top: 30px;
     }
-
+    
     #lien_activite, #lien_recherche
     {
         padding-top: 0;
@@ -677,7 +714,7 @@ footer ul
         border-top: none;
         border-bottom: solid 2px #0065fc;
     }
-
+    
     #champ_recherche
     {
         height: 40px;
@@ -713,25 +750,25 @@ footer ul
         align-content: center;
     }
     
-#filtres
-{
-    position: relative;
-    left: -40px;
-    width: 100%;
-}
-
+    #filtres
+    {
+        position: relative;
+        left: -40px;
+        width: 100%;
+    }
+    
     #filtres li:first-child
     {
         width: 100%;
     }
-
+    
     .actual_filtre
     {
         position: relative;
         right: 10px;
         margin-left: 10px;
     }
-
+    
     #eco
     {
         height: 36px;
@@ -848,7 +885,6 @@ footer ul
     .showcase2
     {
         margin-top: 50px;
-        padding-left: 13px;
         width: 100%;
         max-height: 150px;
     }
@@ -857,9 +893,9 @@ footer ul
     {
         box-shadow: #f2f2f2 5px 0 5px;
         width: 600px;
-        max-width: 90%;
+        max-width: 95%;
     }
-
+    
     .showcase2 img
     {
         height: 50%;
@@ -872,23 +908,23 @@ footer ul
         max-height: 100px;
         font-size: 0.8em;
     }
-
+    
     .showcase2 .nom_prix_rating h3
     {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
+    
     .showcase2 .nom_prix_rating p
     {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-
+    
     section p a {
         margin-left: 20px;
     }
-
+    
     section h2, section h1
     {
         margin-left: 20px;
@@ -911,7 +947,7 @@ footer ul
     {
         max-height: 100%;
     }
-
+    
     .showcase3
     {
         margin-top: 20px;
