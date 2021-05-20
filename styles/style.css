@@ -140,7 +140,7 @@ header li a:hover
     display: none;
 }
 
-#recherche #filtres
+#filtres
 {
     position: relative;
     left: -35px;
@@ -713,11 +713,69 @@ footer ul
         align-content: center;
     }
     
-    .actual_filtre
+#filtres
+{
+    position: relative;
+    left: -40px;
+    width: 100%;
+}
+
+    #filtres li:first-child
     {
-        margin-left: 5px;
+        width: 100%;
     }
 
+    .actual_filtre
+    {
+        position: relative;
+        right: 10px;
+        margin-left: 10px;
+    }
+
+    #eco
+    {
+        height: 36px;
+        width: 150px;
+    }
+    
+    #eco_texte
+    {
+        padding-left: 10px;
+    }
+    
+    #famille
+    {
+        height: 35px;
+        width: 110px;
+    }
+    
+    #famille_texte
+    {
+        padding-left: 10px;
+    }
+    
+    #romance
+    {
+        height: 35px;
+        width: 150px;
+    }
+    
+    #romance_texte
+    {
+        padding-left: 10px;
+    }
+    
+    #animaux
+    {
+        height: 35px;
+        width: 210px;
+    }
+    
+    #animaux_texte
+    {
+        padding-left: 10px;
+    }
+    
     #main_display
     {
         display: flex;
@@ -728,7 +786,6 @@ footer ul
     
     #populaire
     {
-        width: 100%;
         max-width: 100%;
         padding-left: 10px;
         border-radius: 0;
@@ -790,7 +847,7 @@ footer ul
     
     .showcase2
     {
-        margin-top: 70px;
+        margin-top: 50px;
         padding-left: 13px;
         width: 100%;
         max-height: 150px;
@@ -805,13 +862,31 @@ footer ul
 
     .showcase2 img
     {
+        height: 50%;
         max-height: 90px;
         top: 0;
     }
     
     .showcase2 .nom_prix_rating
     {
+        max-height: 100px;
         font-size: 0.8em;
+    }
+
+    .showcase2 .nom_prix_rating h3
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .showcase2 .nom_prix_rating p
+    {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    section p a {
+        margin-left: 20px;
     }
 
     section h2, section h1
@@ -824,7 +899,7 @@ footer ul
         flex-direction: column;
         font-weight: bold;
         width: 100%;
-        max-width: 98%;
+        max-width: 100%;
     }
     
     #calanques, #vieux_port
