@@ -771,46 +771,12 @@ footer ul
     
     #eco
     {
-        height: 36px;
         width: 150px;
-    }
-    
-    #eco_texte
-    {
-        padding-left: 10px;
     }
     
     #famille
     {
-        height: 35px;
         width: 110px;
-    }
-    
-    #famille_texte
-    {
-        padding-left: 10px;
-    }
-    
-    #romance
-    {
-        height: 35px;
-        width: 150px;
-    }
-    
-    #romance_texte
-    {
-        padding-left: 10px;
-    }
-    
-    #animaux
-    {
-        height: 35px;
-        width: 210px;
-    }
-    
-    #animaux_texte
-    {
-        padding-left: 10px;
     }
     
     #main_display
