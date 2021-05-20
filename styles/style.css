@@ -26,37 +26,41 @@ header
     justify-content: space-between;
 }
 
-header img
-{
-    padding-top: 20px;
-    text-align: end;
-    float: left;
-}
-
 #menu
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
     list-style-type: none;
     text-align: center;
+    align-items: baseline;
     font-size: 16px;
+    width: 100%;
 }
 
-#menu div
+#menu li
 {
-    padding-top: 37px;
+    display: inline-block;
+    padding-top: 30px;
     width: 150px;
 }
 
-header div:hover
+#lien_logo
+{
+    position: relative;
+    top: 10px;
+    text-align: left;
+    flex: 1;
+}
+
+#lien_recherche:hover, #lien_activite:hover, #inscription:hover
 {
     border-top: #0065fc solid 2px;
     color: #0065fc;
 }
 
-header div a:hover
+header li a:hover
 {
     color: #0065fc;
 }
@@ -69,7 +73,7 @@ header div a:hover
 
 #recherche
 {
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 
@@ -150,7 +154,7 @@ header div a:hover
 
 #filtres .fas
 {
-    background: #f2f2f2 ;
+    background: #d0e2ff ;
     border: none;
     border-radius: 20px 20px;
     height: 17px;
@@ -159,7 +163,6 @@ header div a:hover
     padding-top: 9px;
     padding-bottom: 9px;
     color: #0065fc;
-    justify-content: left;
 }
 
 #filtres .fa-child
@@ -170,9 +173,9 @@ header div a:hover
 
 .actual_filtre
 {
+    margin-top: 5px;
     border: solid 2px #f2f2f2;
     border-radius: 20px 20px;
-    justify-content: space-between;
     margin-left: 20px;
     cursor: pointer;
 }
@@ -343,7 +346,7 @@ section h2
 .showcase2 img
 {
     position: relative;
-    top: 13px;
+    top: 12px;
     height: 150px;
     max-width: 100%;
     border-radius: 15px 15px 0 0 ;
@@ -601,18 +604,26 @@ footer ul
     }
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 1000px) and(min-width: 700px)
 {
     body
     {
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 699.98px)
+{
+    body
+    {
+        width: 100%;
+    }
+    
     header
     {
         width: 100%;
-        position: relative;
-        right: 10px;
+        height: 150px;
     }
     
     header img
@@ -626,22 +637,33 @@ footer ul
         position: absolute;
         right: 0;
     }
-    
-    #menu div
+
+    #lien_logo
     {
-        height: 55px;
+        order: 1;
+        border-top: 2px solid white;
+        padding-top: 30px;
+    }
+    
+    #menu li
+    {
+        padding-top: 0;
+        padding-bottom: 3px;
+        height: 40px;
         min-width: 50%;
-        padding-top: 17px;
     }
 
     #inscription
     {
+        order: 2;
         border-top: 2px solid white;
+        padding-top: 30px;
     }
     
     #inscription:hover
     {
         border-top: solid 2px #0065fc;
+        padding-top: 30px;
     }
 
     #lien_activite, #lien_recherche
@@ -655,12 +677,47 @@ footer ul
         border-top: none;
         border-bottom: solid 2px #0065fc;
     }
-    
-    #recherche
+
+    #champ_recherche
     {
-        margin-top: 100px;
+        height: 40px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: solid 2px #f2f2f2;
+        border-radius: 20px;
     }
     
+    #champ
+    {
+        font-size: 1.1em;
+        border: none;
+    }
+    
+    #bouton
+    {
+        display: none;
+    }
+    
+    #bouton_small
+    {
+        display: inline;
+        background-color: #0065fc;
+        color: white;
+        border: none;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 15px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .actual_filtre
+    {
+        margin-left: 5px;
+    }
+
     #main_display
     {
         display: flex;
@@ -733,7 +790,7 @@ footer ul
     
     .showcase2
     {
-        margin-top: 60px;
+        margin-top: 70px;
         padding-left: 13px;
         width: 100%;
         max-height: 150px;
@@ -742,8 +799,10 @@ footer ul
     .showcase2 a
     {
         box-shadow: #f2f2f2 5px 0 5px;
+        width: 600px;
+        max-width: 90%;
     }
-    
+
     .showcase2 img
     {
         max-height: 90px;
@@ -754,72 +813,57 @@ footer ul
     {
         font-size: 0.8em;
     }
-    
-    #champ_recherche
+
+    section h2, section h1
     {
-        height: 40px;
-        width: 250px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        border: solid 2px #f2f2f2;
-        border-radius: 20px;
+        margin-left: 20px;
     }
     
-    #champ
-    {
-        font-size: 1.1em;
-        border: none;
-    }
-    
-    #bouton
-    {
-        display: none;
-    }
-    
-    #bouton_small
-    {
-        display: inline;
-        background-color: #0065fc;
-        color: white;
-        border: none;
-        padding-left: 12px;
-        padding-right: 12px;
-        border-radius: 15px;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    #liste_activites
+    #liste_activites, #groupe1, #groupe2, #sousgroupe1, #sousgroupe2
     {
         flex-direction: column;
         font-weight: bold;
+        width: 100%;
+        max-width: 98%;
     }
     
-    #liste_activites img
+    #calanques, #vieux_port
     {
-        border-radius: 15px 15px 0 0;
+        max-width: 100%;
     }
     
+    #pomegues, #frioul
+    {
+        max-height: 100%;
+    }
+
     .showcase3
     {
-        border: #f2f2f2 2px solid;
-        border-radius: 15px 15px 20px 20px;
+        margin-top: 20px;
+        width: 100%;
     }
     
-}
-
-@media screen and (max-width: 700px)
-{
+    .showcase3 a
+    {
+        box-shadow: #f2f2f2 5px 0 5px;
+    }
+    
+    .showcase3 img
+    {
+        max-height: 90px;
+        width: 100%;
+        top: 0;
+        
+    }
+    
+    .showcase3 .nom_prix_rating
+    {
+        font-size: 0.8em;
+    }
     
     #hebergements_marseille
     {
         align-content: center;
     }
     
-    .showcase2 a
-    {
-        width: 600px;
-        max-width: 90%;
-    }
 }
