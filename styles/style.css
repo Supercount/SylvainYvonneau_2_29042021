@@ -292,7 +292,7 @@ header li a:hover
 {
     width: 150px;
     max-height: 100%;
-    max-width: 50%;
+    max-width: 40%;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
@@ -304,6 +304,8 @@ header li a:hover
 
 .showcase .nom_prix_rating h3
 {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 1.3em;
 }
 
@@ -329,6 +331,11 @@ section h2
     justify-content: space-around;
 }
 
+.showcase2
+{
+    width: 30%;
+}
+
 .showcase2 a
 {
     border: solid white 3px;
@@ -336,7 +343,7 @@ section h2
     border-radius: 20px;
     margin-top: 25px;
     max-height: 260px;
-    width: 260px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -586,20 +593,15 @@ footer ul
     list-style-type: none;
 }
 
-@media screen and (max-width: 1700px)
+@media screen and (max-width: 1500px) and (min-width: 1200px)
 {    
-    .showcase .nom_prix_rating
+    body
     {
-        margin-left: 5px;
-    }
-    
-    .showcase .nom_prix_rating h3
-    {
-        font-size: 1em;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 700px)
+@media screen and (max-width: 1200px) and (min-width: 700px)
 {
     body
     {
