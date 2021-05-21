@@ -128,7 +128,7 @@ header li a:hover
     background-color: #0065fc;
     color: white;
     font-family: 'Raleway';
-    font-size: 1.3em;
+    font-size: 1.2em;
     border: none;
     border-radius: 0 15px 15px 0;
     justify-content: center;
@@ -265,14 +265,14 @@ header li a:hover
 
 #populaire h2
 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 #populaire .fa-chart-line
 {
     position: absolute;
-    font-size: 1.3em;
+    font-size: 1.2em;
     right: 30px;
     top: 30px;
 }
@@ -306,7 +306,7 @@ header li a:hover
 {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #hebergements_marseille
@@ -318,7 +318,7 @@ header li a:hover
     flex: 3;
 }
 
-section h2
+section h1
 {
     font-size: 1.3em;
     margin-left: 50px;
@@ -367,7 +367,7 @@ section h2
 
 .showcase2 .nom_prix_rating h3
 {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .showcase2 .nom_prix_rating p
@@ -570,7 +570,7 @@ footer
 
 footer div
 {
-    width: 450px;
+    width: 30%;
 }
 
 footer div li:first-child
@@ -799,7 +799,7 @@ footer ul
     #populaire .fa-chart-line
     {
         position: absolute;
-        font-size: 1.3em;
+        font-size: 1.2em;
         right: 30px;
         top: 20px;
     }
@@ -945,4 +945,9 @@ footer ul
         align-content: center;
     }
     
+    footer div
+    {
+        width: 100%;
+    }
+
 }
