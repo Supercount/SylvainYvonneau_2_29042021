@@ -97,7 +97,6 @@ header li a:hover
     align-content: center;
     border: solid 2px #f2f2f2;
     border-radius: 20px;
-    margin-left: 15px;
 }
 
 #logo_lieu
@@ -119,20 +118,17 @@ header li a:hover
 {
     font-size: 1.1em;
     border: none;
+    padding-left: 10px;
 }
 
 #bouton
 {
-    top: 6px;
-    left: 5px;
     background-color: #0065fc;
     color: white;
     font-family: 'Raleway';
     font-size: 1.2em;
     border: none;
     border-radius: 0 15px 15px 0;
-    justify-content: center;
-    align-content: center;
 }
 
 #bouton_small
@@ -156,7 +152,7 @@ header li a:hover
 {
     background: #d0e2ff ;
     border: none;
-    border-radius: 20px 20px;
+    border-radius: 20px 0 0 20px;
     height: 17px;
     padding-left: 9px;
     padding-right: 9px;
@@ -182,7 +178,7 @@ header li a:hover
 
 #eco
 {
-    height: 36px;
+    height: 35px;
     width: 160px;
 }
 
@@ -300,6 +296,13 @@ header li a:hover
 .showcase .nom_prix_rating
 {
     margin-left: 10px;
+    position: relative;
+}
+
+.showcase .nom_prix_rating p:last-child
+{
+    position: absolute;
+    bottom: 0;
 }
 
 .showcase .nom_prix_rating h3
@@ -326,6 +329,8 @@ section h1, section h2
 
 #hotels
 {
+    padding-left: 5px;
+    padding-right: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -338,7 +343,7 @@ section h1, section h2
 
 .showcase2 a
 {
-    border: solid white 3px;
+    border: solid white 5px;
     background: white;
     border-radius: 20px;
     margin-top: 25px;
@@ -353,7 +358,7 @@ section h1, section h2
 .showcase2 img
 {
     position: relative;
-    top: 12px;
+    top: 10px;
     height: 150px;
     max-width: 100%;
     border-radius: 15px 15px 0 0 ;
@@ -422,7 +427,7 @@ section p a
 
 .showcase3
 {
-    border: #f2f2f2 2px solid;
+    border: transparent 2px solid;
     border-radius: 15px 15px 20px 20px;
 }
 
@@ -430,7 +435,6 @@ section p a
 {
     position: relative;
     bottom: 5px;
-    align-items: center;
     font-weight: bold;
     padding-left: 20px;
     font-size: 1.1em;
@@ -551,10 +555,15 @@ section p a
     border-radius: 15px 15px 0 0 ;
 }
 
+.showcase a, .showcase2 a, .showcase3
+{
+    box-shadow: #bebebe 0.5px 0.5px 20px;
+}
+
 .showcase a:hover, .showcase2 a:hover, .showcase3:hover
 {
     cursor: pointer;
-    box-shadow: #121212 5px 5px 10px;
+    box-shadow: #3a3a3a 5px 5px 15px;
     color: #0065fc;
 }
 
@@ -628,7 +637,6 @@ footer ul
     
     #populaire
     {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding-left: 10px;
@@ -644,6 +652,11 @@ footer ul
     .showcase
     {
         max-width: 33%;
+    }
+
+    .showcase .nom_prix_rating h3
+    {
+        font-size: 1.1em;
     }
 
     #hebergements_marseille
