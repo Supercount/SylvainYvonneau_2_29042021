@@ -432,7 +432,6 @@ section p a
 
 .showcase3
 {
-    border: transparent 2px solid;
     border-radius: 15px 15px 20px 20px;
 }
 
@@ -666,7 +665,7 @@ footer ul
 
     .showcase .nom_prix_rating h3
     {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     #hebergements_marseille
@@ -703,8 +702,6 @@ footer ul
     #lien_logo
     {
         order: 1;
-        border-top: 2px solid white;
-        padding-top: 30px;
     }
     
     #menu li
@@ -718,14 +715,13 @@ footer ul
     #inscription
     {
         order: 2;
-        border-top: 2px solid white;
-        padding-top: 30px;
+        position: relative;
+        bottom: 5px;
     }
     
     #inscription:hover
     {
-        border-top: solid 2px #0065fc;
-        padding-top: 30px;
+        border-top: none;
     }
     
     #lien_activite, #lien_recherche
