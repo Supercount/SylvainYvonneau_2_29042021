@@ -54,7 +54,7 @@ header
     flex: 1;
 }
 
-#lien_recherche:hover, #lien_activite:hover, #inscription:hover
+#lien_hebergements:hover, #lien_activite:hover, #inscription:hover
 {
     border-top: #0065fc solid 2px;
     color: #0065fc;
