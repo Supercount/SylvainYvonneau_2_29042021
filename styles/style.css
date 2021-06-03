@@ -42,7 +42,7 @@ header
 #menu li
 {
     display: inline-block;
-    padding-top: 30px;
+    padding-top: 44px;
     width: 150px;
 }
 
@@ -326,7 +326,7 @@ section h2
     margin-left: 40px;
 }
 
-section h1
+#activites h2
 {
     font-size: 1.3em;
     margin-left: 20px;
